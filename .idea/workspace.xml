@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="PHPUnitRunConfigurationType" name="ExampleTest.testUsersCreationEndPointTest" />
+    </enabled-run-configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea03c0b-0fbc-4598-ad25-3e4292de50bd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +128,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.ExampleTest.testUsersCreationEndPointTest">
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
     <configuration name="ExampleTest.testUsersCreationEndPointTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -160,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609105424838</updated>
-      <workItem from="1609105429601" duration="5906000" />
+      <workItem from="1609105429601" duration="6213000" />
     </task>
     <servers />
   </component>
@@ -168,6 +173,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/laravel_testing@ExampleTest_testUsersCreationEndPointTest.xml" NAME="ExampleTest.testUsersCreationEndPointTest Coverage Results" MODIFIED="1609119332615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/laravel_testing@ExampleTest_testUsersCreationEndPointTest.xml" NAME="ExampleTest.testUsersCreationEndPointTest Coverage Results" MODIFIED="1609119913844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
