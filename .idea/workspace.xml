@@ -128,7 +128,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+  <component name="RunManager" selected="PHPUnit.ExampleTest.testUsersCreationEndPointTest">
     <configuration name="ExampleTest.testUsersCreationEndPointTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -165,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609105424838</updated>
-      <workItem from="1609105429601" duration="6734000" />
+      <workItem from="1609105429601" duration="7074000" />
     </task>
     <servers />
   </component>

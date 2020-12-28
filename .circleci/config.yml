@@ -51,6 +51,7 @@ jobs:
           command: |
             touch database/database.sqlite
             php artisan migrate --env=testing
+            php artisan cache:clear
 
       - run:
           name: "Run Http Tests"
