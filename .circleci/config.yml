@@ -1,42 +1,46 @@
-version: 2.1
-
+version: 2
 jobs:
   build:
     docker:
+      # Specify the version you desire here
       - image: circleci/php:7.4-node-browsers
 
     steps:
       - checkout
+
       - run:
-          name: "Preparando o Ambiente"
+          name: "Prepare Environment"
           command: |
             sudo apt update
             sudo docker-php-ext-install zip
 
       - run:
-          name: "Criando arquivo de variáveis de ambiente"
+          name: "Create Environment file"
           command: |
             mv .env.testing .env
 
+      # Download and cache dependencies
       - restore_cache:
           keys:
+            # "composer.lock" can be used if it is committed to the repo
             - v1-dependencies-{{ checksum "composer.json" }}
+            # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
       - run:
-          name: "Instalando Dependencias"
+          name: "Install Dependencies"
           command: composer install -n --prefer-dist
 
       - save_cache:
-          key: v1-dependencies-{{ checksum "composer.json }}
+          key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
-            - ./vendors
+            - ./vendor
 
       - run:
-          name: "Gerando APP Key"
+          name: "Generate App key"
           command: php artisan key:generate
 
+      # run tests with phpunit
       - run:
-          name: "Executando testes unitários"
+          name: "Run Unit Tests"
           command: ./vendor/bin/phpunit tests/Unit
-
