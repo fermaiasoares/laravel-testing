@@ -35,8 +35,6 @@ class ExampleTest extends TestCase
             'password_confirmation' => $password
         ]);
 
-        var_dump($response);
-
         $response
             ->assertStatus(201)
             ->assertExactJson([
